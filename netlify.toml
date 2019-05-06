@@ -1,0 +1,9 @@
+[build]
+  publish = "/dist"
+  command = "bundle exec rake"
+
+[[redirects]]
+  from = "https://tkg.netlify.com/*"
+  to = "https://tkg.haiiro.io/:splat"
+  status = 301
+  force = true
