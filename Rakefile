@@ -8,3 +8,5 @@ task :build do
   Opal.append_path 'app'
   File.binwrite 'dist/build.js', Opal::Builder.build('application').to_s
 end
+
+task default: 'build'
