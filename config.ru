@@ -1,7 +1,7 @@
-require 'opal'
-require 'opal-browser'
+require 'bundler'
+Bundler.require
 
-run(Opal::SimpleServer.new do |s|
+run Opal::SimpleServer.new { |s|
   s.main = 'application'
   s.append_path 'app'
-end)
+}

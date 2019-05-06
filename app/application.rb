@@ -1,6 +1,6 @@
 require 'opal'
-require 'views/index'
 require 'browser'
+require 'views/index'
 
 jd = Time.now.yday
 
